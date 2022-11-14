@@ -1,17 +1,10 @@
 using System.Text.Json;
 
-namespace Person
+namespace Genericos
 {
-    public class Person
+    public interface Person
     {
-        public string Name { get; set; }
-        public string Age { get; set; }
-        
-        public Person(string name, string age)
-        {
-            this.Name = name;
-            this.Age = age;
-        }
-        
-    }
+        string Name { get; set; }
+        int Age { get; set; }
+    } Person
 }
